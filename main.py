@@ -69,7 +69,7 @@ for file_ in tqdm (range(L_csv), desc="Processing ..."):
             output_df["filename"].append(name)
             output_df["time_rel(sec)"].append(t_average[i] - offset_inicio)
             break
-    pd.DataFrame(output_df).to_csv("output_catalog.csv",index=False)
+    #pd.DataFrame(output_df).to_csv("output_catalog.csv",index=False)
         #plt.figure(file_)
         #plt.subplot(4,1,1)
         #plt.plot(time_rel,velocity)
@@ -81,7 +81,7 @@ for file_ in tqdm (range(L_csv), desc="Processing ..."):
         #plt.plot(t_average[:len(t_average)-1],dcdf_p)
         #plt.show()
 
-pd.DataFrame(output_df).to_csv("output_catalog.csv")
+pd.DataFrame(output_df).to_csv("output_catalog.csv",index=False)
    
 
 
